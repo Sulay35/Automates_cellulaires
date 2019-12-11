@@ -1,3 +1,4 @@
+
 # Cellular Automata
 _Making differents Cellular Automata with Javascript_
 
@@ -17,4 +18,41 @@ _Making differents Cellular Automata with Javascript_
 ```
 > X( I , J ) = 1
 
-If arround X the cell are empties then fill them with 1, the same process for each cells of the grid.
+If arround X the cell are empties then fill them with 1, the same process is repeated for each cells of the grid everytime in the `draw() ` function: 
+```javascript
+if(grid[i][j] ==  1){
+
+if(grid[i-1][j-1] ==  0){
+grid[i-1][j-1] =  1;
+}
+
+else  if(grid[i][j-1] ==  0){
+grid[i][j-1] =  1;
+}
+
+else  if(grid[i+1][j-1] ==  0){
+grid[i+1][j-1] =  1;
+}
+
+else  if(grid[i-1][j] ==  0){
+grid[i-1][j] =  1;
+}
+
+else  if(grid[i+1][j] ==  0){
+grid[i+1][j] =  1;
+}
+
+else  if(grid[i-1][j+1] ==  0){
+grid[i-1][j+1] =  1;
+}
+
+else  if(grid[i][j+1] ==  0){
+grid[i][j+1] =  1;
+}
+
+else  if(grid[i+1][j+1] ==  0){
+grid[i+1][j+1] =  1;
+}
+}
+```
+
