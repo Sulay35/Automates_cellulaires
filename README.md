@@ -1,9 +1,20 @@
-# Automates_cellulaires
-_Différents automates cellulaires_
+# Cellular Automata
+_Making differents Cellular Automata with Javascript_
 
-> Conçu avec la librairie P5.js : https://p5js.org/
- 
- | Command | Description |
-| --- | --- |
-| `git status` | List all *new or modified* files |
-| `git diff` | Show file differences that **haven't been** staged |
+> Made with P5.js librairy : https://p5js.org/
+
+> #####  Base for each projects : 
+> - Creation of a 2D array 100 * 100,  represented with 10 * 10 squares  
+>   * If the value of a cell is 0 : color of the square --> White 
+>   * If the value of a cell is 1 : color of the square --> Orange
+
+
+### 1- Propagation : 
+```
+[0,0,0]
+[0,X,0]
+[0,0,0]
+```
+> X( I , J ) = 1
+
+If arround X the cell are empties then fill them with 1, the same process for each cells of the grid.
